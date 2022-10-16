@@ -121,12 +121,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ListadoPokemon.cpp" />
     <ClCompile Include="MenuPrincipal.cpp" />
+    <ClCompile Include="OrdenarListado.cpp" />
+    <ClCompile Include="ProcesarArchivo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ListadoPokemon.h" />
     <ClInclude Include="MenuPrincipal.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="OrdenarListado.h" />
+    <ClInclude Include="ProcesarArchivo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
